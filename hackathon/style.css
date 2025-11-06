@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 body{
     height: 100vh;
-    background: url('hands.jpeg') no repeat center center/cover;
+    background-image: url('hands.jpeg') no repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.background{
+    z-index: -1;
+    position: fixed;
+    margin-left: 100px;
 }
 .container{
     width: 100%;
@@ -49,16 +55,17 @@ h2{
     justify-content: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover{
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 .card img{
-    width: 180px;
-    height: 100;
+    width: auto;
+    height: 200px;
     margin-bottom: 10px;
+    margin: auto;
 }
 .card p{
     font-size: 1rem;
