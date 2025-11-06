@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page </title>
+</head>
+<body>
+    <h2>login</h2>
+    <form action="home.html">
+        <label for="username">username</label>
+        <input type="text" required><br><br>
+        <label for="password" required>password</label><br>
+         <input type="password" required>
+
+         <button type="submit">login</button><br><br>
+
+         <p>Do not have an account? sign up</p>
+
+    </form>
+    <script>
+        function loginuser(){
+            let username = document.getElementById("user").value;
+            let password = document.getElementById("pass").value;
+            if (username === "admin" && password ==="1234"){
+                window.location.href = "home.html";
+
+            }
+            else{
+                alert("wrong password or username");
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
